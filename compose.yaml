@@ -1,0 +1,8 @@
+services:
+  fluidsynth:
+    container_name: fluidsynth
+    build: .
+    devices:
+      - "/dev/snd:/dev/snd"
+    cap_add:
+      - SYS_NICE
