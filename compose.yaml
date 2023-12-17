@@ -6,3 +6,5 @@ services:
       - "/dev/snd:/dev/snd"
     cap_add:
       - SYS_NICE
+    ports:
+      - 9800:9800
