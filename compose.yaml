@@ -1,7 +1,7 @@
 services:
   fluidsynth:
     container_name: fluidsynth
-    build: .
+    build: https://github.com/scottgarner/fluidsynth-docker.git
     devices:
       - "/dev/snd:/dev/snd"
     cap_add:
