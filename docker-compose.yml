@@ -1,9 +1,9 @@
 services:
   fluidsynth:
-    pull_policy: build
     build: .
     image: scottmadethis/fluidsynth-docker
     container_name: fluidsynth
+    network_mode: host
     restart: always
     devices:
       - "/dev/snd:/dev/snd"
