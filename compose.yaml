@@ -1,7 +1,10 @@
 services:
   fluidsynth:
+    pull_policy: build
+    build: .
+    image: @scottgarner/fluidsynth-docker
     container_name: fluidsynth
-    build: https://github.com/scottgarner/fluidsynth-docker.git
+    restart: always
     devices:
       - "/dev/snd:/dev/snd"
     cap_add:
